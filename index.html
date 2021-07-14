@@ -132,7 +132,7 @@ function populate(city){
 
     function FetchData(){
         let city_name=city.value;
-        let url=`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=8149e50098e5be05e5918408bf1e514f&units=metric`
+        let url=`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=8149e50098e5be05e5918408bf1e514f&units=metric`
         fetch(url).then(res=>res.json()).then(data=>populate(data))
     }
 </script>
